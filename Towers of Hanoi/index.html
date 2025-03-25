@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>Towers of Hanoi</h1>
+        <h5>Click "Start Game" to begin.
+        <h5>Drag the disks between rods to solve the puzzle, ensuring that larger disks are placed below smaller ones.</h5Drag>
+        <h5>You can pause the game with the "Pause" button or restart it using the "Restart" button.</h5>
+        <div id="rods-container">
+            <div class="rod" id="rod1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="rod" id="rod2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="rod" id="rod3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="platform"></div> <!-- Platform under the rods -->
+        </div>
+        <div id="controls">
+            <label for="disk-count">Select number of disks:</label>
+            <select id="disk-count">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <button id="start-game">Start Game</button>
+            <button id="pause-game">Pause</button>
+            <button id="undo-move">Undo Move</button>
+            <button id="restart-game">Restart</button>
+            <button id="quit-game">Quit</button>
+        </div>
+        <div id="info">
+            <p id="move-count">Moves: 0</p>
+            <p id="timer">Time: 0s</p>
+            <p id="win-message"></p>
+        </div>
+        <div id="leaderboard-container">
+            <h2>Leaderboard</h2>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th>Disks</th>
+                        <th>Moves</th>
+                        <th>Fastest Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leaderboard entries will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

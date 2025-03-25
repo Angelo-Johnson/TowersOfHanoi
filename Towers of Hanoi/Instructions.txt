@@ -1,0 +1,28 @@
+1. Prerequisites:
+        To run the game, you’ll need a modern web browser like Google Chrome, Microsoft Edge or Safari.
+
+2. Download or Clone the Repository:
+        If you're running the game locally, download or clone the repository that includes the following files:
+
+        =index.html
+        =style.css
+        =script.js
+
+3. Running the Application:
+        Simply open the index.html file in your browser by double-clicking on it, which will launch the game in the browser.
+
+4. Playing the Game:
+        Once the game is loaded, you can select the number of disks you want to play with.
+
+        Click "Start Game" to begin.
+
+        Drag the disks between rods to solve the puzzle, ensuring that larger disks are placed below smaller ones.
+
+        You can pause the game with the "Pause" button or restart it using the "Restart" button.
+
+        After completing the puzzle and moving all disks to the final rod, the game will display your time and move count. 
+        If your time is the fastest for that number of disks, it will update the leaderboard.
+
+5. Leaderboard:
+        The leaderboard shows the fastest times for each disk count. 
+        The data is stored in your browser's local storage, so it will remain even if you close or refresh the page.
